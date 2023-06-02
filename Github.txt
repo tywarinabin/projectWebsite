@@ -1,0 +1,10 @@
+ Steps to add file in github from git command.
+
+
+git add .    = to add all files into stagged area
+
+
+git commit -m " message "     = to commit all those changes
+
+
+git push origin master (branchname)    = to insert into github repo.
