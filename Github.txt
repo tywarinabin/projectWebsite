@@ -8,3 +8,22 @@ git commit -m " message "     = to commit all those changes
 
 
 git push origin master (branchname)    = to insert into github repo.
+
+
+
+
+
+
+Steps of getting files of github repository to our local computer.
+
+
+1. Find where we have to place those file on our Local Computer
+
+
+2. Suppose I have to place it on GITHUUUB folder and click that GITHUUUB folder and select Get Gitbash here Option
+
+
+3. Type Command      -->>   git clone https://github.com/tywarinabin/projectWebsite   
+
+
+4. this bring all the file of the projectWebsite to our computer.
