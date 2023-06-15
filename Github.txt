@@ -28,3 +28,73 @@ Steps of getting files of github repository to our local computer.
 
 4. this bring all the file of the projectWebsite to our computer.
 THank You
+
+
+
+Sample Example 
+
+
+
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (master)
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), 2.06 KiB | 2.00 KiB/s, done.
+From https://github.com/tywarinabin/projectWebsite
+   3ac0859..6f3fa97  master     -> origin/master
+Updating 3ac0859..6f3fa97
+Fast-forward
+ Github.txt | 3 ++-
+ README.md  | 1 +
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 README.md
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (master)
+$ git chekout -b features
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (master)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (feature)
+$ git add README1.md
+fatal: pathspec 'README1.md' did not match any files
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (feature)
+$ touch feature.txt
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (feature)
+$ git add feature.txt
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (feature)
+$ git commit -m "New Feature file added"
+[feature d23e173] New Feature file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (feature)
+$ git push -u origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 355 bytes | 355.00 KiB/s, done.
+Total 3 (delta 0), reused 1 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/tywarinabin/projectWebsite/pull/new/feature
+remote:
+To https://github.com/tywarinabin/projectWebsite.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+NABIN@GS MINGW64 ~/OneDrive/Desktop/my-first-repo/projectWebsite (feature)
+$
+
